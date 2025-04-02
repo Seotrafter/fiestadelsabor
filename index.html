@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos a Fiesta del Sabor, el rincón más sabroso de Chile. Disfruta de platos auténticos, postres deliciosos y un ambiente festivo.">
+    <meta name="keywords" content="Fiesta del Sabor, comida chilena, restaurante, postres, cocina tradicional, Chile">
+    <meta name="author" content="Fiesta del Sabor">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Fiesta del Sabor - El Sabor de Chile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2 class="h3"><i class="fas fa-pepper-hot"></i> Fiesta del Sabor</h2>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="/" class="nav-link text-white"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a href="/#menu" class="nav-link text-white"><i class="fas fa-utensils"></i> Menú</a></li>
+                    <li class="nav-item"><a href="about/" class="nav-link text-white"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contacts/contacts.html" class="nav-link text-white"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="text-center d-flex justify-content-center align-items-center" style="background-image: url('images/cafe-background.jpg'); background-size: cover; background-position: center; height: 60vh; color: #fff;">
+        <div class="container">
+            <h1 class="display-4">Bienvenidos a Fiesta del Sabor</h1>
+            <p class="lead">Un lugar acogedor en Chile para disfrutar de tu café y dulces favoritos.</p>
+            <a href="#menu" class="btn btn-primary"><i class="fas fa-book-open"></i> Explora Nuestro Menú</a>
+        </div>
+    </section>
+
+   <section id="menu" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Menú Popular</h2>
+            
+        <div id="popularMenuCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/latte.jpg" class="card-img-top" alt="Latte">
+                                <div class="card-body">
+                                    <h5 class="card-title">Latte Cremoso</h5>
+                                    <p class="card-text">$4.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/muffin.jpg" class="card-img-top" alt="Muffin">
+                                <div class="card-body">
+                                    <h5 class="card-title">Muffin de Arándanos</h5>
+                                    <p class="card-text">$3.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/cappuccino.jpg" class="card-img-top" alt="Cappuccino">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino</h5>
+                                    <p class="card-text">$4.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/bagel.jpg" class="card-img-top" alt="Bagel">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bagel de Sésamo</h5>
+                                    <p class="card-text">$2.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/espresso.jpg" class="card-img-top" alt="Espresso">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso Intenso</h5>
+                                    <p class="card-text">$3.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/croissant.jpg" class="card-img-top" alt="Croissant">
+                                <div class="card-body">
+                                    <h5 class="card-title">Croissant de Mantequilla</h5>
+                                    <p class="card-text">$2.75</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#popularMenuCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#popularMenuCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+   <section id="specials" class="bg-secondary text-white py-5" style="background-image: url('images/specials-background.jpg'); background-size: cover; background-position: center;">
+    <div class="container text-center">
+        <h2><i class="fas fa-star"></i> Ofertas Especiales</h2>
+        <p class="lead">¡Descubre nuestras ofertas diarias y delicias de temporada!</p>
+        <div class="row mt-4">
+            <!-- Oferta 1 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mug-hot fa-4x mb-3"></i>
+                        <h5 class="card-title"><i class="fas fa-leaf"></i> Latte de Calabaza</h5>
+                        <p class="card-text">¡Un favorito de temporada, disponible ahora!</p>
+                        <a href="contacts/contacts.html" class="btn btn-primary">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Oferta 2 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cookie-bite fa-4x mb-3"></i>
+                        <h5 class="card-title"><i class="fas fa-cookie-bite"></i> Pastelería 2x1</h5>
+                        <p class="card-text">Disfruta de nuestra repostería fresca a un precio especial.</p>
+                        <a href="contacts/contacts.html" class="btn btn-primary">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Oferta 3 -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body text-center">
+                        <i class="fas fa-clock fa-4x mb-3"></i>
+                        <h5 class="card-title"><i class="fas fa-clock"></i> Hora Feliz</h5>
+                        <p class="card-text">Café con descuento de 2 a 4 PM cada día.</p>
+                        <a href="contacts/contacts.html" class="btn btn-primary">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="testimonials" class="py-5" style="background-image: url('images/testimonials-background.jpg'); background-size: cover; background-position: center; color: #fff;">
+    <div class="container text-center">
+        <h2>Testimonios de Clientes</h2>
+        <p class="lead">¡Lo que nuestros clientes adoran de Daily Cup Cafe!</p>
+        <div class="row mt-4">
+            <!-- Testimonio 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer1.jpg" class="rounded-circle mx-auto" alt="Customer 1" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"¡El café aquí es una revelación! El arte del latte siempre añade un toque especial."</p>
+                        <div class="stars text-warning">
+                            ★★★★★
+                        </div>
+                        <cite class="d-block text-white-50">— Rachel Green</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer2.jpg" class="rounded-circle mx-auto" alt="Customer 2" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"¡Un lugar fantástico para tomar algo rápido y relajarte con amigos!"</p>
+                        <div class="stars text-warning">
+                            ★★★★☆
+                        </div>
+                        <cite class="d-block text-white-50">— Mike Ross</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer3.jpg" class="rounded-circle mx-auto" alt="Customer 3" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"¡El latte de calabaza especiado es mi opción cada otoño. Delicioso!"</p>
+                        <div class="stars text-warning">
+                            ★★★★★
+                        </div>
+                        <cite class="d-block text-white-50">— Monica Geller</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer4.jpg" class="rounded-circle mx-auto" alt="Customer 4" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"¡Ambiente cálido, personal amable y los mejores croissants de la ciudad!"</p>
+                        <div class="stars text-warning">
+                            ★★★★★
+                        </div>
+                        <cite class="d-block text-white-50">— Chandler Bing</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer5.jpg" class="rounded-circle mx-auto" alt="Customer 5" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"¡Excelentes opciones veganas, y el cappuccino con leche de almendra es imprescindible!"</p>
+                        <div class="stars text-warning">
+                            ★★★★☆
+                        </div>
+                        <cite class="d-block text-white-50">— Phoebe Buffay</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer7.jpg" class="rounded-circle mx-auto" alt="Customer 6" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"Me encanta lo acogedora e invitante que es esta cafetería. ¡Perfecta para un día lluvioso!"</p>
+                        <div class="stars text-warning">
+                            ★★★★★
+                        </div>
+                        <cite class="d-block text-white-50">— Joey Tribbiani</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 7 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer6.jpg" class="rounded-circle mx-auto" alt="Customer 7" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"¡Servicio rápido, precios excelentes y los sándwiches son para morirse!"</p>
+                        <div class="stars text-warning">
+                            ★★★★☆
+                        </div>
+                        <cite class="d-block text-white-50">— Ross Geller</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonio 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark text-white p-3 rounded shadow">
+                    <img src="images/customer8.jpg" class="rounded-circle mx-auto" alt="Customer 8" width="80">
+                    <blockquote class="blockquote mt-3">
+                        <p>"El mejor lugar para relajarse después de un largo día. ¡El café siempre es perfecto!"</p>
+                        <div class="stars text-warning">
+                            ★★★★★
+                        </div>
+                        <cite class="d-block text-white-50">— Rachel Zane</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <section id="faq" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Preguntas Frecuentes</h2>
+        <p class="lead text-center">Encuentra respuestas a tus preguntas frecuentes sobre Fiesta del Sabor.</p>
+        <div class="accordion" id="faqAccordion">
+            <!-- Pregunta 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué hace único a tu café?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Seleccionamos nuestros granos de fincas sostenibles y los tostamos internamente para que cada taza esté fresca y llena de sabor.
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Tienen opciones sin gluten?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, ofrecemos una selección de pasteles y snacks sin gluten. ¡Solo pregunta a nuestro personal para recibir recomendaciones!
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Puedo trabajar o estudiar en la cafetería?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Por supuesto! Contamos con Wi-Fi gratuito y mucho espacio para quienes trabajan o estudian.
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Ofrecen tarjetas de regalo?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, ofrecemos tarjetas de regalo en varias denominaciones. ¡Son el regalo perfecto para los amantes del café!
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Puedo personalizar mi bebida?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Sí! Estaremos encantados de personalizar tu bebida. Elige entre nuestra variedad de opciones de leche, jarabes y complementos.
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Tienen asientos al aire libre?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, contamos con un acogedor patio al aire libre, perfecto para disfrutar de tu café en días soleados.
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Se permiten mascotas en la cafetería?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Las mascotas son bienvenidas en nuestra zona exterior, pero no dentro de la cafetería por motivos de salud.
+                    </div>
+                </div>
+            </div>
+            <!-- Pregunta 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ¿Organizan eventos o reuniones privadas?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, nuestra cafetería está disponible para eventos y reuniones privadas. Contáctanos para más detalles y disponibilidad.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="menu-tabs" class="py-5" style="background-image: url('images/menu-background.jpg'); background-size: cover; background-position: center; color: #fff;">
+    <div class="container">
+        <h2 class="text-center">Nuestro Menú</h2>
+        <p class="text-center lead">¡Explora nuestras deliciosas opciones por categoría!</p>
+        <ul class="nav nav-tabs justify-content-center custom-tabs" id="menuTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="true">Bebidas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">Postres</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="main-menu-tab" data-bs-toggle="tab" data-bs-target="#main-menu" type="button" role="tab" aria-controls="main-menu" aria-selected="false">Menú Principal</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-4 p-4 rounded shadow" id="menuTabContent" style="background: rgba(0, 0, 0, 0.6);">
+            <!-- Bebidas Tab -->
+            <div class="tab-pane fade show active" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                <h3 class="text-center text-warning mb-4">Bebidas</h3>
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Ingredientes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Americano</td>
+                            <td>$3.00</td>
+                            <td>Espresso, Agua Caliente</td>
+                        </tr>
+                        <tr>
+                            <td>Té Verde</td>
+                            <td>$2.50</td>
+                            <td>Hojas de Té Verde, Agua Caliente</td>
+                        </tr>
+                        <tr>
+                            <td>Jugo de Naranja Natural</td>
+                            <td>$4.00</td>
+                            <td>Naranjas recién exprimidas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Postres Tab -->
+            <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                <h3 class="text-center text-warning mb-4">Postres</h3>
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Ingredientes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Muffin de Arándanos</td>
+                            <td>$3.00</td>
+                            <td>Harina, Arándanos, Azúcar</td>
+                        </tr>
+                        <tr>
+                            <td>Pastel de Chocolate</td>
+                            <td>$4.50</td>
+                            <td>Cacao, Harina, Azúcar, Huevos</td>
+                        </tr>
+                        <tr>
+                            <td>Croissant de Mantequilla</td>
+                            <td>$2.75</td>
+                            <td>Mantequilla, Harina, Azúcar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Menú Principal Tab -->
+            <div class="tab-pane fade" id="main-menu" role="tabpanel" aria-labelledby="main-menu-tab">
+                <h3 class="text-center text-warning mb-4">Menú Principal</h3>
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Ingredientes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sándwich de Pollo</td>
+                            <td>$6.50</td>
+                            <td>Pollo a la parrilla, Lechuga, Tomate, Pan</td>
+                        </tr>
+                        <tr>
+                            <td>Wrap Vegetariano</td>
+                            <td>$5.50</td>
+                            <td>Vegetales mixtos, Tortilla</td>
+                        </tr>
+                        <tr>
+                            <td>Sopa del Día</td>
+                            <td>$4.00</td>
+                            <td>Varía diariamente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <h5 class="text-warning">Contáctanos</h5>
+                <p>
+                    Teléfono: +56 9 4472 3229 <br>
+                    Correo: <a href="mailto:info@fiestadelsabor.com" class="text-warning">info@fiestadelsabor.com</a><br>
+                    Dirección: Rosal 361, 8320144 Santiago, Región Metropolitana, Chile
+                </p>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="col-md-4">
+                <h5 class="text-warning">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+            <!-- Newsletter -->
+            <div class="col-md-4">
+                <h5 class="text-warning">Suscríbete</h5>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: #ffc107; color: #000;">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="row">
+            <div class="col text-center">    
+                <a href="/privacy-policy.html" class="text-white mx-2">Política de Privacidad</a>
+          <a href="/terms-of-service.html" class="text-white mx-2">Términos de Servicio</a>
+          <a href="/cookies-policy.html" class="text-white mx-2">Política de Cookies</a>
+                <br>
+                <br>
+                <p>&copy; 2024 Fiesta del Sabor. Todos los derechos reservados. <i class="fas fa-pepper-hot"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="cookie-banner" class="fixed-bottom bg-dark text-white py-3 px-4" style="z-index: 1050;">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <p class="mb-0">
+                Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Al continuar navegando, aceptas nuestra 
+                <a href="politica-cookies.html" class="text-warning">Política de Cookies</a>.
+            </p>
+        </div>
+        <button id="accept-cookies" class="btn btn-warning btn-sm">Aceptar</button>
+    </div>
+</div>
+
+
+    <script>
+    // JavaScript to handle cookie acceptance
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        document.cookie = "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 days
+    });
+
+    // Check if cookies were accepted
+    if (document.cookie.includes("cookiesAccepted=true")) {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

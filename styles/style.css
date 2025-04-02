@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h2:after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ffc107;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Header */
+header {
+    background-color: #343a40;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #ffc107;
+}
+
+header nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f8f9fa;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header nav .nav-link:hover {
+    color: #ffc107;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Home Section */
+#home {
+    background-image: url('images/cafe-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #fff;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+#home .btn {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#home .btn:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+}
+
+/* Menu Section */
+#menu {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+#menu .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#menu .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#menu .card-title {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* Specials Section */
+#specials {
+    background-color: #ffc107;
+    padding: 60px 0;
+    color: #fff;
+}
+
+#specials h2 {
+    color: #fff;
+}
+
+#specials .card {
+    background-color: #6c757d;
+    border: none;
+}
+
+#specials .card-title {
+    font-size: 1.2rem;
+    color: #ffc107;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#testimonials h2 {
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+#testimonials blockquote {
+    font-size: 1rem;
+    color: #6c757d;
+    border-left: 4px solid #ffc107;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#blog h2 {
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+#blog .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#blog .card:hover {
+    transform: translateY(-5px);
+}
+
+#blog .btn {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+}
+
+#blog .btn:hover {
+    background-color: #e0a800;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#faq .accordion-button {
+    background-color: #fff;
+    color: #6c757d;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+#faq .accordion-body {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Events Section */
+#events {
+    background-image: url('images/coffee-beans.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#events h2 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#events .list-group-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #6c757d;
+    border: none;
+    font-size: 1rem;
+}
+
+#events .list-group-item:hover {
+    background-color: rgba(255, 224, 130, 0.8);
+}
+
+/* Team Section */
+#team {
+    background-color: #343a40;
+    padding: 60px 0;
+    color: #fff;
+}
+
+#team h2 {
+    color: #ffc107;
+    margin-bottom: 40px;
+}
+
+#team img {
+    border: 5px solid #ffc107;
+    border-radius: 50%;
+}
+
+#team h5 {
+    color: #ffc107;
+    margin-top: 15px;
+}
+
+#team p {
+    color: #d6d6d6;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: #f8f9fa;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ffc107;
+}
+.card {
+    border: 2px solid #ffc107;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.card .card-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    border-top: 1px solid #ffc107;
+    padding-top: 10px;
+}
+.custom-tabs .nav-link {
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffc107;
+        font-weight: bold;
+    }
+    .custom-tabs .nav-link.active {
+        background: #ffc107;
+        color: #000;
+    }
+    .custom-tabs .nav-link:hover {
+        color: #fff;
+        background: rgba(255, 193, 7, 0.8);
+    }
+    .table-dark {
+        color: #ffc107;
+        border-color: #ffc107;
+    }
+    .table-dark th, .table-dark td {
+        border-color: #ffc107;
+    }

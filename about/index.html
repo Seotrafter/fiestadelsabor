@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conoce la historia de Fiesta del Sabor y nuestra pasión por la comida chilena." />
+  <meta name="keywords" content="Fiesta del Sabor, comida chilena, restaurante, tradición, sobre nosotros" />
+  <meta name="author" content="Fiesta del Sabor" />
+  <title>Sobre Nosotros - Fiesta del Sabor</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap desde CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+  <!-- Nuestro CSS -->
+  <link rel="stylesheet" href="../styles/style.css" />
+
+  <!-- Font Awesome desde CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h2 class="h3"><i class="fas fa-pepper-hot"></i> Fiesta del Sabor</h2>
+      <nav>
+        <ul class="nav">
+          <!-- Enlace a la raíz del sitio -->
+          <li class="nav-item">
+            <a href="/" class="nav-link text-white">
+              <i class="fas fa-home"></i> Inicio
+            </a>
+          </li>
+          <!-- Ancla a la sección #menu en la raíz -->
+          <li class="nav-item">
+            <a href="/#menu" class="nav-link text-white">
+              <i class="fas fa-utensils"></i> Menú
+            </a>
+          </li>
+          <!-- Página Sobre Nosotros (dentro de /about/) -->
+          <li class="nav-item">
+            <a href="../about/" class="nav-link text-white">
+              <i class="fas fa-info-circle"></i> Sobre Nosotros
+            </a>
+          </li>
+          <!-- Página de contacto (dentro de /contacts/) -->
+          <li class="nav-item">
+            <a href="../contacts/contacts.html" class="nav-link text-white">
+              <i class="fas fa-envelope"></i> Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Texto -->
+        <div class="col-md-6">
+          <h2 class="mb-4">Nuestra Historia</h2>
+          <p>
+            <strong>Fiesta del Sabor</strong> nació con la misión de celebrar la cocina chilena en su máxima expresión.
+            Desde nuestros inicios en el corazón de Santiago, hemos trabajado con amor para ofrecer recetas tradicionales
+            con un toque moderno.
+          </p>
+          <p>
+            Creemos que la comida tiene el poder de unir a las personas, contar historias y despertar emociones.
+            Cada plato que servimos es un homenaje a nuestra cultura, a nuestros ingredientes locales y a las manos
+            que los preparan.
+          </p>
+
+          <h3 class="mt-4">¿Qué nos hace únicos?</h3>
+          <ul>
+            <li>Ingredientes frescos y locales seleccionados cuidadosamente</li>
+            <li>Recetas auténticas de la cocina chilena</li>
+            <li>Ambiente cálido, familiar y lleno de sabor</li>
+            <li>Atención personalizada y cercana</li>
+          </ul>
+
+          <blockquote class="blockquote mt-4">
+            <p class="mb-0">"No cocinamos solo comida, cocinamos recuerdos que te hacen volver."</p>
+            <footer class="blockquote-footer text-muted">Equipo Fiesta del Sabor</footer>
+          </blockquote>
+        </div>
+
+        <!-- Imagen -->
+        <div class="col-md-6 text-center">
+          <img
+            src="../images/equipo-fiesta.jpg"
+            alt="Equipo Fiesta del Sabor"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-warning">Contáctanos</h5>
+          <p>
+            Teléfono: +56 9 4472 3229<br />
+            Correo:
+            <a href="mailto:info@fiestadelsabor.com" class="text-warning">info@fiestadelsabor.com</a><br />
+            Dirección: Rosal 361, Santiago, Chile
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-warning">Síguenos</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a><br />
+            <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
+              <i class="fab fa-instagram"></i> Instagram
+            </a><br />
+            <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-warning">Suscríbete</h5>
+          <form action="#" method="post">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Ingresa tu correo"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              style="background-color: #ffc107; color: #000;"
+            >
+              Suscribirse
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <div class="row">
+        <div class="col text-center">
+          <a href="../privacy-policy.html" class="text-white mx-2">Política de Privacidad</a>
+          <a href="../terms-of-service.html" class="text-white mx-2">Términos de Servicio</a>
+          <a href="../cookies-policy.html" class="text-white mx-2">Política de Cookies</a>
+          <br /><br />
+          <p>&copy; 2024 Fiesta del Sabor. Todos los derechos reservados. <i class="fas fa-pepper-hot"></i></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+</html>
